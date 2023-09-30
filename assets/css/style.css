@@ -95,6 +95,7 @@ main {
     background-color: lightblue;
     /*Make the main content to take up the space and push the footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /*Footer*/
