@@ -208,6 +208,18 @@ benefits-mental>div {
     color: #fafafa;
 }
 
+/* Gallery section*/
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+    /* don'r know wht thou, why EM,*/
+}
+
+#photos {
+    line-height: 0;
+}
+
 /*Footer*/
 #social-networks {
     text-align: center;
@@ -223,6 +235,15 @@ benefits-mental>div {
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape photos (576px and up)*/
+
+@media screen and (min-width:576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /*Media query: Tablets and larger (768px and up) */
 
 @media screen and (min-width:768px) {
@@ -234,6 +255,7 @@ benefits-mental>div {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+
     }
 
     #menu {
@@ -284,6 +306,11 @@ benefits-mental>div {
         align-self: flex-end;
     }
 
+    /* Gallery*/
+    #photos {
+        column-count: 3;
+    }
+
 }
 
 /*Media query: Laptops and larger (992px and up) */
@@ -291,6 +318,11 @@ benefits-mental>div {
 @media screen and (min-width:992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery*/
+    #photos {
+        column-count: 3;
     }
 }
 
