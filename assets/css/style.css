@@ -178,6 +178,33 @@ benefits-mental>div {
     justify-content: center;
 }
 
+/* Meet-up section*/
+
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center/cover;
+    /*why don'r we have top here*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /*this will not wrap on the screens less than 400px, Each div will expend to fill the space on its row*/
+    /*do not know why thou*/
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*Create a grid between div to look like boxes*/
+    border: 2px solid #fafafa;
+}
+
+/* Override the color of the h3 elements for this section*/
+#times h3 {
+    color: #fafafa;
+}
+
 /*Footer*/
 #social-networks {
     text-align: center;
