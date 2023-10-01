@@ -104,7 +104,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
     /*i don't know why*/
 }
@@ -127,6 +127,8 @@ main {
     color: #ffffff;
 }
 
+/* Reasons section */
+
 #reasons {
     width: 90%;
     margin: 20px auto;
@@ -141,7 +143,7 @@ main {
 
 benefits-physical>div,
 benefits-mental>div {
-    margin: 20px;
+    margin-bottom: 20px;
     line-height: 20px;
 }
 
@@ -149,9 +151,31 @@ benefits-mental>div {
     padding: 0 20px;
 }
 
-hr {
+#benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+/* Cover image */
+#circle-cover-bg {
+    background: url(../images/reasons-image.webp) no-repeat top center/cover;
+    /* do't know why top*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* added myself because looked too much high up*/
+    height: 90vw;
+    width: 90vw;
+    /* Makes the image circle*/
+    border-radius: 50%;
+    /* Make sure to have max width and height so the picture doesn't take too much space in laptops and bigger screens*/
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Footer*/
