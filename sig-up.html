@@ -62,41 +62,75 @@
         <form
           action="https://formdump.codeinstitute.net"
           id="signup-form"
-          method="post"
+          method="POST"
         >
           <h2>
             <i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!
           </h2>
           <label for="first_name">Firs Name</label>
-          <input type="text" id="first_name" required />
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            class="text-input"
+            required
+          />
           <br />
           <label for="last_name">Last Name</label>
-          <input type="text" id="last_name" required />
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            class="text-input"
+            required
+          />
           <br />
           <label for="email_address">Email Address</label>
-          <input type="text" id="email_address" required />
-
+          <input
+            type="text"
+            id="email_address"
+            name="email_address"
+            class="text-input"
+            required
+          />
+          <br />
           <div class="radio_buttons">
             <div>
               <label for="road">Road</label>
               <input
                 type="radio"
-                name="running_preference" id="road" value="road" required checked/>
+                name="running_preference"
+                id="road"
+                value="road"
+                required
+                checked
+              />
             </div>
 
             <div>
               <label for="trail">Trail</label>
-              <input type="radio" name="running_preference" id="trail" value="trail" /> 
-              <!--what doeas value do??-->
+              <input
+                type="radio"
+                name="running_preference"
+                id="trail"
+                value="trail"
+                required
+              />
+              <!--what doeas value do?? why do we have name also??-->
             </div>
 
             <div>
               <label for="both">Both</label>
-              <input type="radio" name="running_preference" id="both" value="both"/>
+              <input
+                type="radio"
+                name="running_preference"
+                id="both"
+                value="both"
+                required
+              />
             </div>
-
-            <button type="submit" class="join-button">Let's Run!</button>
-          
+          </div>
+          <button type="submit" class="join-button">Let's Run!</button>
         </form>
       </section>
     </main>
